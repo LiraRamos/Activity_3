@@ -1,28 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Login</title>
-   
+    <style>
+        /* id */
+        #divContainer {
+            text-align: center;
+        }
+        /*class name */
+        .redText {
+            color: brown;
+            background-color: aliceblue;
+        }
+        .redText:hover {
+            color: blue;
+        }
+        #btnLogin {
+            font-size: large;
+            color: blue;
+        }
+
+        #btnLogin:hover {
+            cursor: pointer;
+            font-size: xx-large;
+            color: brown;
+        }
+        /*input {
+            text-align: right;
+        }*/
+    </style>
 </head>
 
 <body>
-    <div style="align-items: center;">
-   <h1>Login</h1>
-   <input type="text" placeholder="ramosjeanlira@gmail.com">
-   <input type="text" placeholder="jxn_lira12">
+
+    <div style="text-align: center;" id="divContainer">
+        <h1>Login</h1>
+        <input type="text" placeholder="Username" id="txtUsername" class="redText">
+        <input type="password" placeholder="Password" id="txtPassword" class="resText">
         <div style="margin-top: 1rem;">
-            <button id="btnlogin">Login</button>
- </div> 
-         <script>
-        // Javascript
-        console.log("Hello World");
-        // let var
-        let buttonLogin = document.querySelector('#btnlogin');
-        buttonLogin.onclick=function(){
-            alert("Login Successfully.")
-        };
-    </script>    
+            <button id="btnLogin" onclick="alert ('Login Successfully')">Login</button>
+        </div>
+    </div>
 </body>
+
+    <script>
+        // JavaScript
+        console.log("Hello World");
+        // let / var
+        let buttonLogin = document.querySelector('#btnLogin');
+        buttonLogin.onclick = function () {
+            alert("Login Successfully")
+        };
+    </script>
+
 </html>
